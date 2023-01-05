@@ -4,36 +4,18 @@
 library(shiny)
 library(annotator)
 
-im <- system.file("sample_images", "aves", "3.jpg", package = "annotator")
-imgsrc <- system.file("sample_images", "datasource.txt", package = "annotator") |> read.delim()
-
+im <- system.file("sample_images", "aves", "1.jpg", package = "annotator")
 
 ui <-  fluidPage(
 
-  fluidRow(
-    column(6,
+  mainPanel(
       tags$h4("Draw some polygons on the image"),
-      align = "right",
       annotatorOutput("annotation")
     ),
-    column(6,
+   sidebarPanel(
       tags$h4("XY cartesian coordinates (pixels)"),
-      align = "left",
       tableOutput("results")
     )
-  ), 
-
-  HTML(glue::glue("
-      <footer>
-      {
-        imgsrc[3, ]
-      }
-      </footer>
-  
-  "))
-
-
-
   )
 
 server <- function(input, output) {
@@ -48,7 +30,8 @@ server <- function(input, output) {
 
     req(input$res_id)
 
-    jsonlite::fromJSON(input$res_id)
+    parse(text=input$res_id)|>eval()
+
 
 
   })

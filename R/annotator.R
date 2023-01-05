@@ -18,7 +18,7 @@
 #' @examples
 #' if (interactive()) {
 #'   require(annotator)
-#'   im = system.file("sample_images", "aves", "5.jpg", package = "annotator")
+#'   im = system.file("sample_images", "aves", "5.png", package = "annotator")
 #'   annotate(im)
 #' }
 #'
@@ -26,6 +26,7 @@ annotate <- function(im,resultId = "annot_id", brushWidth = 4, brushColor = "red
   if (missing(im)) {
     im64 <- empty_png()
   } else {
+    # TODO: check if image is supported by the browser.
     im64 <- xfun::base64_uri(im)
   }
 
@@ -41,7 +42,7 @@ annotate <- function(im,resultId = "annot_id", brushWidth = 4, brushColor = "red
 
 
   createWidget(
-    name = "fabric",
+    name = "annotator_fabric",
     x,
     package = "annotator"
   )
@@ -65,7 +66,7 @@ annotate <- function(im,resultId = "annot_id", brushWidth = 4, brushColor = "red
 
 
 annotatorOutput <- function(outputId, width = "auto", height = "auto", ...) {
-  shinyWidgetOutput(outputId, "fabric", width, height, package = "annotator", ...)
+  shinyWidgetOutput(outputId, "annotator_fabric", width, height, package = "annotator", ...)
 }
 
 #' Widget render function for use in Shiny
