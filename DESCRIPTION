@@ -1,6 +1,6 @@
 Package: annotator
 Title: Image Annotation and Polygon Outlining using Free Drawing
-Version: 0.0.3
+Version: 0.0.3.1
 Authors@R: 
     person("Mihai", "Valcu", , "mvalcu@gwdg.de", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-6907-7802"))
@@ -8,8 +8,8 @@ Description: Provides functions to create image annotations through polygon outl
 License: GPL (>= 3)
 Encoding: UTF-8
 RoxygenNote: 7.2.3
-URL: https://github.com/cran/annotator
-BugReports: https://github.com/cran/annotator/issues
+URL: https://github.com/valcu/annotator
+BugReports: https://github.com/valcu/annotator/issues
 Depends: R (>= 4.0.0),
 Imports: methods, utils, shiny, htmlwidgets, xfun
 Suggests: testthat (>= 3.0.0), stringr, glue, bslib, sf, terra, keys,
@@ -17,8 +17,8 @@ Suggests: testthat (>= 3.0.0), stringr, glue, bslib, sf, terra, keys,
 Config/testthat/edition: 3
 Language: en-US
 NeedsCompilation: no
-Packaged: 2022-12-22 21:35:04 UTC; mihai
+Packaged: 2023-10-18 09:35:40 UTC; mihai
 Author: Mihai Valcu [aut, cre] (<https://orcid.org/0000-0002-6907-7802>)
 Maintainer: Mihai Valcu <mvalcu@gwdg.de>
 Repository: CRAN
-Date/Publication: 2023-01-05 15:30:02 UTC
+Date/Publication: 2023-10-18 09:50:10 UTC
