@@ -1,9 +1,9 @@
-9fe9c88275b5af015293bfe00749b01d *DESCRIPTION
+19b94eb9d7007579771570245a39a319 *DESCRIPTION
 f0f608ac73fc38c6237e0aaf03c58987 *NAMESPACE
-c047b41e317f6928330e27d3929c835c *R/aaa.R
-c1d2cc41a55e95391b402892ce13daa3 *R/annotator.R
+8f43f5a1671a1772065ef969114a0251 *R/aaa.R
+a33fd75c6ab9f63104e9b8f0f92f770e *R/annotator.R
 ea94ecb40fa07b6361c28eae34c3deb8 *R/utils.R
-44551143e1b3779d3c9ee6ae7f0f0ccf *README.md
+d23d5212d00a9b2a954ac898668e78c7 *README.md
 a3ebb1d138882bfadfdb47385de34f12 *inst/WORDLIST
 2aac60846ebd9a1a6204b1ea8897bc57 *inst/examples/01_hello/app.R
 6e5de50d7ba4e1b3929b6be0ede0acdb *inst/examples/02_pipeline/app.R
@@ -20,8 +20,8 @@ aa09513025bd5cf89da0c284172ad3c5 *inst/sample_images/aves/1.jpg
 32119d4a640874f1807add34d7c5bc9b *inst/sample_images/aves/4.png
 d1df99961b182a9462dd5d2a65be15db *inst/sample_images/aves/5.png
 f5f3dbd9824cb32568fb52217fffe845 *inst/sample_images/datasource.txt
-358913405d1f853e23a2b62330c3039b *man/annotate.Rd
-2939955d331a5dd71b738a4bff2b1eda *man/annotator.Rd
+199a6fc3b45bdcb3c4159a989c4e941c *man/annotate.Rd
+e590625b549cf681c6a1bf9a5647627c *man/annotator.Rd
 7f2cadb3c98bb4fc3316d63e41914b65 *man/annotatorOutput.Rd
 c03a9e5da331fcb817173c5c8fc25279 *man/empty_png.Rd
 303865d37263143969865798d2b13d73 *man/renderAnnotator.Rd
